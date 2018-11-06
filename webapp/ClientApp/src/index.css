@@ -1,0 +1,53 @@
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    body {
+        padding-top: 50px;
+    }
+}
+
+#root {
+    height:100%;
+}
+
+html, body, #root {
+    /* we don't want any of these to scroll */
+    overflow: hidden;
+    height: 100%;
+}
+
+.app-header {
+    color:#ffffff!important;
+}
+
+.work-area-background {
+    background-color: #f5f5f5 !important;
+}
+
+.workspace {
+    height: 100% !important;
+    flex-grow: 1 !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
+.page-host {
+    padding-left: 20px !important;
+    padding-top: 20px !important;
+    padding-right: 260px !important;
+}
+
+.brand-color {
+    background-color: #23ccef !important;
+    background: linear-gradient(180deg,#23ccef 0,rgba(64,145,255,.7)) !important;
+    background-size: 150% 150% !important;
+}
+
+
+.ui.thin.left.sidebar {
+    width: 240px !important;
+}
+
+.ui.visible.thin.left.sidebar ~ .fixed, .ui.visible.thin.left.sidebar ~ .pusher {
+    -webkit-transform: translate3d(240px,0,0) !important;
+    transform: translate3d(240px,0,0) !important;
+}
